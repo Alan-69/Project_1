@@ -2,10 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def inicio(request):
-    return render(request, "AppAlan/inicio.html")
+    return render(request, "AppAlan/index.html")
 
 def cursos(request):
-    return HttpResponse("Vista cursos")
+    return render(request, "AppAlan/cursos.html")
 
 def profesores(request):
     return HttpResponse("Vista profesores")
